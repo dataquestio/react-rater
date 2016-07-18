@@ -60,7 +60,7 @@ export default class Rater extends Component {
     callback && callback(rating, lastRating)
   }
   render() {
-    let {total, limit, rating, interactive, children, ...others} = this.props
+    let {total, limit, rating, interactive, children, onRate, ...others} = this.props
     total = Number(total)
     limit = Number(limit)
     rating = Number(this.state.rating)
